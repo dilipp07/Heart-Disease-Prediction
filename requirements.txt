@@ -9,4 +9,4 @@ xgboost
 dill
 ipykernel
 scikit-learn
-# -e .
+-e .
