@@ -1,0 +1,75 @@
+<html>
+<body>
+    <h1>Welcome TO Heart Disease Prediction</h1>
+
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+
+    <div class="form-group">
+        <label for="Age">Age</label>
+        <input type="text" id="Age" name="Age" placeholder=" Eg (32.0)">
+    </div>
+
+    <div class="form-group">
+        <label for="Sex">Sex</label>
+        <input type="text" id="Sex" name="Sex">
+    </div>
+
+    <div class="form-group">  
+        <label for="Chest_pain_type">Chest pain type</label>
+        <input type="text" id="Chest_pain_type" name="Chest_pain_type" >
+    </div>
+    
+
+  
+    <div class="form-group">
+        <label for="BP">BP</label>
+        <input type="text" id="BP" name="BP">
+    </div>
+
+
+    <div class="form-group">
+        <label for="Cholesterol">Cholesterol</label>
+        <input type="text" id="Cholesterol" name="Cholesterol" >
+    </div>         
+    <div class="form-group">
+        <label for="FBS_over_120">FBS over 120</label>
+        <input type="text" id="FBS_over_120" name="FBS_over_120" >
+    </div>  
+
+    <div class="form-group">
+        <label for="EKG_results">EKG results</label>
+        <input type="text" id="EKG_results" name="EKG_results" >
+    </div>
+
+    <div class="form-group">
+        <label for="Max_HR">Max HR</label>
+        <input type="text" id="Max_HR" name="Max_HR" >
+    </div>
+    <div class="form-group">
+        <label for="Exercise_angina">Exercise angina</label>
+        <input type="text" id="Exercise_angina" name="Exercise_angina" >
+    </div>
+    <div class="form-group">
+        <label for="ST_depression">ST depression</label>
+        <input type="text" id="ST_depression" name="ST_depression" >
+    </div>
+    <div class="form-group">
+        <label for="Slope_of_ST">Slope of ST</label>
+        <input type="text" id="Slope_of_ST" name="Slope_of_ST" >
+    </div>
+    <div class="form-group">
+        <label for="Number_of_vessels_fluro">Number of vessels fluro</label>
+        <input type="text" id="Number_of_vessels_fluro" name="Number_of_vessels_fluro" >
+    </div>
+
+    <div class="form-group">
+        <label for="Thallium">Thallium</label>
+        <input type="text" id="Thallium" name="Thallium" >
+    </div>
+
+    <div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

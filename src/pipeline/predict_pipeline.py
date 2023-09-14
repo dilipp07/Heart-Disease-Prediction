@@ -32,36 +32,59 @@ class PredictPipeline:
 
 
 
+
 class CustomData:
     def __init__(self,
-    age:int,
-    sex:str,
-    bmi:float,
-    children:int,
-    smoker:str,
-    region:str):
+    Age:int,
+    Sex:int,
+    Chest_pain_type:int,
+    BP:int,
+    Cholesterol:int,
+    FBS_over_120 :int,
+    EKG_results:int,
+    Max_HR:int,
+    Exercise_angina:int,
+    ST_depression:float,
+    Slope_of_ST:int,
+    Number_of_vessels_fluro :int,
+    Thallium :int):
     
         
-        self.age=age
-        self.sex=sex
-        self.bmi=bmi
-        self.children=children
-        
-        self.smoker=smoker
-        self.region=region
+        self.Age=Age
+        self.Sex=Sex
+        self.Chest_pain_type=Chest_pain_type
+        self.BP=BP
+        self.Cholesterol=Cholesterol
+        self.FBS_over_120=FBS_over_120
+        self.EKG_results=EKG_results
+        self.Max_HR=Max_HR
+        self.Exercise_angina=Exercise_angina
+        self.ST_depression=ST_depression
+        self.Slope_of_ST=Slope_of_ST
+        self.Number_of_vessels_fluro=Number_of_vessels_fluro
+        self.Thallium=Thallium
         
         
 
     def get_data_as_dataframe(self):
         try:
             custom_data_input_dict = {
-                'age':[self.age],
-                'sex':[self.sex],
-                'bmi':[self.bmi],
-                'children':[self.children],
-                
-                'smoker':[self.smoker],
-                'region':[self.region]
+                'Age':[self.Age],
+                'Sex':[self.Sex],
+                'Chest pain type':[self.Chest_pain_type],
+                'BP':[self.BP],
+                'Cholesterol':[self.Cholesterol],
+                'FBS over 120':[self.FBS_over_120],
+                'EKG results':[self.EKG_results],
+                'Max HR':[self.Max_HR],
+                'Exercise angina':[self.Exercise_angina],
+                'ST depression':[self.ST_depression],
+                'Slope of ST':[self.Slope_of_ST],
+                'Number of vessels fluro':[self.Number_of_vessels_fluro],
+                'Thallium':[self.Thallium]
+
+
+
 
                 }
 
